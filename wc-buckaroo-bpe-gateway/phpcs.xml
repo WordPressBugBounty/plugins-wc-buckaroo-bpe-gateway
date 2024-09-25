@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Buckaroo Wordpress WooCommerce"
+         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+    <description>A custom coding standard for Buckaroo Wordpress WooCommerce plugin.</description>
+
+    <arg name="colors"/>
+    <arg name="report" value="code"/>
+
+    <!-- Exclude folders and files from being checked. -->
+    <exclude-pattern>./bin/*</exclude-pattern>
+    <exclude-pattern>./tests/*</exclude-pattern>
+    <exclude-pattern>./coverage-report/*</exclude-pattern>
+    <exclude-pattern>./languages/*</exclude-pattern>
+    <exclude-pattern>./vendor/*</exclude-pattern>
+    <exclude-pattern>*.min.js</exclude-pattern>
+    <exclude-pattern>*.js</exclude-pattern>
+
+    <!-- Include the WordPress-Extra standard. -->
+    <rule ref="WordPress-Extra">
+        <!-- We don`t use tabs indents -->
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
+        <!-- This is disable and incompatible with strict_types after opening PHP tags -->
+        <exclude name="Squiz.Commenting.FileComment.Missing"/>
+        <!-- Not every @param needs to be commented  -->
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
+        <!-- Not every method functions needs to be commented  -->
+        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
+        <!-- At this moment we are not using Wordpress conventions for the classes names  -->
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+        <!-- At this moment we are not using Wordpress conventions for the files names  -->
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+        <!-- We dont require and need a dot at the end of each comment -->
+        <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+        <!-- We dont require a comment for each @throws comment -->
+        <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/>
+        <!-- We dont require each comment ends in a characters that means the end of the line; like a dot. -->
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+        <!-- In some places we use date() function. We want to use TimeZone set in the store and not gmdate() suggestion from PHPCS -->
+        <exclude name="WordPress.DateTime.RestrictedFunctions.date_date"/>
+        <!-- Exclude warning if founds a method which does not use a parameter -->
+        <exclude name="Generic.CodeAnalysis.UnusedFunctionParameter.FoundInExtendedClassBeforeLastUsed"/>
+        <!-- Exclude warning if founds a method which does not use a parameter in a extended class -->
+        <exclude name="Generic.CodeAnalysis.UnusedFunctionParameter.FoundInExtendedClass"/>
+    </rule>
+
+    <!-- Let's also check that everything is properly documented. -->
+    <rule ref="WordPress-Docs"/>
+
+    <!-- Add in some extra rules from other standards. -->
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.Commenting.Todo"/>
+
+    <!-- Check for PHP cross-version compatibility. -->
+    <config name="testVersion" value="7.2-"/>
+    <rule ref="PHPCompatibilityWP"/>
+
+    <!-- Minimum Wordpress version supported -->
+    <config name="minimum_supported_wp_version" value="5.0"/>
+
+    <!-- Enforce short array syntax -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+    <!-- Exclude problematic sniffs -->
+    <exclude name="PSR12.Functions.ReturnTypeDeclaration"/>
+
+    <!-- Report @todo comments  -->
+    <rule ref="Generic.Commenting.Todo.CommentFound"/>
+</ruleset>
