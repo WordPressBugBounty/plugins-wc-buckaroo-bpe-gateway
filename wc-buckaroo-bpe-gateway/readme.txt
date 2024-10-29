@@ -3,8 +3,8 @@ Contributors: buckaroosupport
 Author: Buckaroo
 Tags: WooCommerce, payments, Buckaroo
 Requires at least: 4.4.10
-Tested up to: 6.5.4
-Stable tag: 3.13.2
+Tested up to: 6.6.2
+Stable tag: 3.14.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,25 +22,25 @@ Payment method support list:
 3.Credit and debit card (American Express, Visa, MasterCard, VPAY, Visa Electron, Maestro, Carte Bleue, Carte Bancaire, Dankort, Nexi, PostePay)
 4.Riverty/Afterpay
 5.Giftcards
-6.Giropay
-7.Bancontact
-8.Sofort
-9.SEPA Credit Transfer (Bank transfer)
-10.SEPA Direct Debit (With or without Credit management)
-11.Payconiq
-12.Przelewy24
-13.Apple Pay
-14.KBC
-15.PayPerEmail
-16.Billink
-17.Belfius
-18.Klarna
-19.In3
-20.PayByBank
-21.EPS
-22.Multibanco
-23.MB Way
-24.Knaken Settle
+6.Bancontact
+7.Sofort
+8.SEPA Credit Transfer (Bank transfer)
+9.SEPA Direct Debit (With or without Credit management)
+10.Payconiq
+11.Przelewy24
+12.Apple Pay
+13.KBC
+14.PayPerEmail
+15.Billink
+16.Belfius
+17.Klarna
+18.In3
+19.PayByBank
+20.EPS
+21.Multibanco
+22.MB Way
+23.Knaken Settle
+24.Blik
 
 == Installation ==
  
@@ -106,6 +106,19 @@ for more detailed release notes visit https://docs.buckaroo.io/docs/woocommerce-
 Please contact support@buckaroo.nl if you need help installing the WooCommerce plugin.
 
 == Changelog ==
+
+= 3.14.0 =
+BP-3662 Add support for WordPress 6.6.2 & WooCommerce 9.2.3 & 9.3.1
+BP-3632 Enhanced the handling of HTTP headers in requests to ensure better performance and stability.
+BP-3603 Add new payment method: Blik
+BP-3671 The default payment method name has changed from AfterPay/Riverty to just Riverty.
+BP-3712 The logo was updated for Riverty.
+BP-3782 Giropay has been removed (discontinued)
+BP-3571 We’ve fixed a PHP error that was showed when moving an order to the WordPress trash bin.
+BP-3661 We’ve fixed an error 404 on blocks.js #277
+BP-3640 A fix was implemented for a Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in.
+BP-3852 Payment fee is not always working correctly for Blocks checkout.
+BP-3786 We’ve fixed a few issues when using the Blocks checkout.
 
 = 3.13.2 =
 BP-3632 Improvement Enhanced the handling of HTTP headers in requests to ensure better performance and stability

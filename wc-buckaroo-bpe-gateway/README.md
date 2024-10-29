@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.buckaroo.nl/media/3477/woocommerce_icon.png" width="200px" position="center">
+  <img src="https://github.com/user-attachments/assets/a38b5a8b-9551-4655-aa87-91af8345eedc" width="200px" position="center">
 </p>
 
 # Buckaroo WooCommerce Payments Plugin
@@ -25,8 +25,8 @@ The Buckaroo WooCommerce Payments Plugin ([Dutch](https://support.buckaroo.nl/ca
 
 To use the Buckaroo plugin, please be aware of the following minimum requirements:
 - A Buckaroo account ([Dutch](https://www.buckaroo.nl/start) or [English](https://www.buckaroo.eu/solutions/request-form))
-- WordPress 4.4.10 up to 6.5.4
-- WooCommerce 5.0 up to 8.9.3
+- WordPress 4.4.10 up to 6.6.2
+- WooCommerce 5.0 up to 9.3.3
 - PHP 7.4 , 8.0 , 8.1 , 8.2, 8.3
 
 ### Quick installation
@@ -70,3 +70,4 @@ If you want to contribute as well, then please follow our [Contribution Guidelin
 
 <b>Please note:</b><br>
 This file has been prepared with the greatest possible care and is subject to language and/or spelling errors.
+
