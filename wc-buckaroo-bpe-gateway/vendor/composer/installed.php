@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'buckaroo/woocommerce',
-        'pretty_version' => 'v4.0.1',
-        'version' => '4.0.1.0',
-        'reference' => '6c1e22e082fea92ea53009cfa396791b396eebc6',
+        'pretty_version' => 'v4.0.2',
+        'version' => '4.0.2.0',
+        'reference' => '83b542ecc3502b036de37d2d7fc0d584a8098a7f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'buckaroo/woocommerce' => array(
-            'pretty_version' => 'v4.0.1',
-            'version' => '4.0.1.0',
-            'reference' => '6c1e22e082fea92ea53009cfa396791b396eebc6',
+            'pretty_version' => 'v4.0.2',
+            'version' => '4.0.2.0',
+            'reference' => '83b542ecc3502b036de37d2d7fc0d584a8098a7f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
