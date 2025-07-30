@@ -799,7 +799,6 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'Buckaroo\\Woocommerce\\Services\\Logger' => __DIR__ . '/../..' . '/src/Services/Logger.php',
         'Buckaroo\\Woocommerce\\Services\\LoggerStorage' => __DIR__ . '/../..' . '/src/Services/LoggerStorage.php',
         'Buckaroo\\Woocommerce\\Services\\Request' => __DIR__ . '/../..' . '/src/Services/Request.php',
-        'Buckaroo\\Woocommerce\\Services\\SessionHandler' => __DIR__ . '/../..' . '/src/Services/SessionHandler.php',
         'Buckaroo\\Woocommerce\\Traits\\HasDateValidation' => __DIR__ . '/../..' . '/src/Traits/HasDateValidation.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );

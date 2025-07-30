@@ -779,7 +779,6 @@ return array(
     'Buckaroo\\Woocommerce\\Services\\Logger' => $baseDir . '/src/Services/Logger.php',
     'Buckaroo\\Woocommerce\\Services\\LoggerStorage' => $baseDir . '/src/Services/LoggerStorage.php',
     'Buckaroo\\Woocommerce\\Services\\Request' => $baseDir . '/src/Services/Request.php',
-    'Buckaroo\\Woocommerce\\Services\\SessionHandler' => $baseDir . '/src/Services/SessionHandler.php',
     'Buckaroo\\Woocommerce\\Traits\\HasDateValidation' => $baseDir . '/src/Traits/HasDateValidation.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
