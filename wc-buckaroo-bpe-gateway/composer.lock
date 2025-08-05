@@ -68,16 +68,16 @@
         },
         {
             "name": "buckaroo/sdk",
-            "version": "1.19.1",
+            "version": "1.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buckaroo-it/BuckarooSDK_PHP.git",
-                "reference": "df3893f93f96beae06aef15e007c33bde1d6727d"
+                "reference": "cdffe056b5b6f1c4469650a26e8d67e59ddaa9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buckaroo-it/BuckarooSDK_PHP/zipball/df3893f93f96beae06aef15e007c33bde1d6727d",
-                "reference": "df3893f93f96beae06aef15e007c33bde1d6727d",
+                "url": "https://api.github.com/repos/buckaroo-it/BuckarooSDK_PHP/zipball/cdffe056b5b6f1c4469650a26e8d67e59ddaa9be",
+                "reference": "cdffe056b5b6f1c4469650a26e8d67e59ddaa9be",
                 "shasum": ""
             },
             "require": {
@@ -118,9 +118,9 @@
             "description": "Buckaroo payment SDK",
             "support": {
                 "issues": "https://github.com/buckaroo-it/BuckarooSDK_PHP/issues",
-                "source": "https://github.com/buckaroo-it/BuckarooSDK_PHP/tree/1.19.1"
+                "source": "https://github.com/buckaroo-it/BuckarooSDK_PHP/tree/1.19.2"
             },
-            "time": "2025-07-03T07:51:31+00:00"
+            "time": "2025-08-04T07:22:45+00:00"
         },
         {
             "name": "composer/ca-bundle",

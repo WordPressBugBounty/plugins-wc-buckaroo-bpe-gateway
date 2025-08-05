@@ -4,7 +4,7 @@ Author: Buckaroo
 Tags: WooCommerce, payments, Buckaroo
 Requires at least: 5.3.18
 Tested up to: 6.7.2
-Stable tag: 4.4.0
+Stable tag: 4.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,13 +34,15 @@ Payment method support list by Buckaroo WooCommerce payments plugin
 14. Billink
 15. Belfius
 16. Klarna
-17. iDEAL In3
+17. In3
 18. PayByBank
 19. EPS
 20. Multibanco
 21. MB Way
 22. goSettle
 23. Blik
+24. WeChat Pay
+25. Alipay
 
 == Release notes ==
 For detailed release notes, please visit our [GitHub repository](https://github.com/buckaroo-it/WooCommerce).
@@ -72,6 +74,10 @@ The “Buckaroo Woocommerce Payments Plugin” has been translated into 3 locale
 [Translate “Buckaroo Woocommerce Payments Plugin” into your language.](https://translate.wordpress.org/projects/wp-plugins/wc-buckaroo-bpe-gateway/)
 
 == Changelog ==
+= 4.4.1 =
+BP-4511 Fix: Duplicate order created and no plaza transaction is generated for Klarna authorize/capture orders.
+BP-4540 Fix: Orders paid with Apple Pay have sometimes an incorrect amount in WooCommerce with discount rules (price paid is correct).
+BP-4555: Billink transaction rounding issue with tax
 = 4.4.0 =
 Add support for WooCommerce 10.0.3, 10.0.2, 10.0.1 & 10.0.0.
 BP-4531: Cart empties when adding product (WooCommerce 10 issue)
