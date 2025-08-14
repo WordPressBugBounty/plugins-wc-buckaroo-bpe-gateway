@@ -773,6 +773,7 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'Buckaroo\\Woocommerce\\Install\\Migration\\Migration' => __DIR__ . '/../..' . '/src/Install/Migration/Migration.php',
         'Buckaroo\\Woocommerce\\Install\\Migration\\MigrationException' => __DIR__ . '/../..' . '/src/Install/Migration/MigrationException.php',
         'Buckaroo\\Woocommerce\\Install\\Migration\\MigrationHandler' => __DIR__ . '/../..' . '/src/Install/Migration/MigrationHandler.php',
+        'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\DisableAutoloadForSettings' => __DIR__ . '/../..' . '/src/Install/Migration/Versions/DisableAutoloadForSettings.php',
         'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\SetupTransactionsAndLogs' => __DIR__ . '/../..' . '/src/Install/Migration/Versions/SetupTransactionsAndLogs.php',
         'Buckaroo\\Woocommerce\\Order\\AddressComponents' => __DIR__ . '/../..' . '/src/Order/AddressComponents.php',
         'Buckaroo\\Woocommerce\\Order\\CaptureTransaction' => __DIR__ . '/../..' . '/src/Order/CaptureTransaction.php',

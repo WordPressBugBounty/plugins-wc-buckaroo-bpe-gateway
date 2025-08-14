@@ -753,6 +753,7 @@ return array(
     'Buckaroo\\Woocommerce\\Install\\Migration\\Migration' => $baseDir . '/src/Install/Migration/Migration.php',
     'Buckaroo\\Woocommerce\\Install\\Migration\\MigrationException' => $baseDir . '/src/Install/Migration/MigrationException.php',
     'Buckaroo\\Woocommerce\\Install\\Migration\\MigrationHandler' => $baseDir . '/src/Install/Migration/MigrationHandler.php',
+    'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\DisableAutoloadForSettings' => $baseDir . '/src/Install/Migration/Versions/DisableAutoloadForSettings.php',
     'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\SetupTransactionsAndLogs' => $baseDir . '/src/Install/Migration/Versions/SetupTransactionsAndLogs.php',
     'Buckaroo\\Woocommerce\\Order\\AddressComponents' => $baseDir . '/src/Order/AddressComponents.php',
     'Buckaroo\\Woocommerce\\Order\\CaptureTransaction' => $baseDir . '/src/Order/CaptureTransaction.php',
