@@ -22,7 +22,6 @@ namespace BuckarooDeps\Buckaroo\PaymentMethods\In3;
 
 use BuckarooDeps\Buckaroo\Models\Model;
 use BuckarooDeps\Buckaroo\PaymentMethods\In3\Models\Pay;
-use BuckarooDeps\Buckaroo\PaymentMethods\In3\Models\PayPayload;
 use BuckarooDeps\Buckaroo\PaymentMethods\PayablePaymentMethod;
 use BuckarooDeps\Buckaroo\Transaction\Response\TransactionResponse;
 

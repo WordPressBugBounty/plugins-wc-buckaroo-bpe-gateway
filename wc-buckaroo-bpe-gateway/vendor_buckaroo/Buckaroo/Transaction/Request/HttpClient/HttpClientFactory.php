@@ -3,9 +3,9 @@
 namespace BuckarooDeps\Buckaroo\Transaction\Request\HttpClient;
 
 use BuckarooDeps\Buckaroo\Config\Config;
+use function defined;
 use BuckarooDeps\GuzzleHttp\Client;
 use BuckarooDeps\GuzzleHttp\ClientInterface;
-use function defined;
 
 class HttpClientFactory
 {

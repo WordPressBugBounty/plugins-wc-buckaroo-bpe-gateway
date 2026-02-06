@@ -23,6 +23,6 @@ namespace BuckarooDeps\Buckaroo\PaymentMethods\AfterpayDigiAccept\Service\Parame
 class PhoneAdapter extends ServiceAdapter
 {
     protected array $keys = [
-        'mobile' => 'PhoneNumber'
+        'mobile' => 'PhoneNumber',
     ];
 }

@@ -4,10 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
+class ComposerStaticInitda27df368105ef6386c88b2163f28373
 {
     public static $prefixLengthsPsr4 = array (
-        'B' => 
+        'B' =>
         array (
             'Buckaroo\\Woocommerce\\' => 21,
             'BuckarooDeps\\' => 13,
@@ -15,11 +15,11 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
     );
 
     public static $prefixDirsPsr4 = array (
-        'Buckaroo\\Woocommerce\\' => 
+        'Buckaroo\\Woocommerce\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'BuckarooDeps\\' => 
+        'BuckarooDeps\\' =>
         array (
             0 => __DIR__ . '/../..' . '/vendor_buckaroo',
         ),
@@ -119,7 +119,6 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Belfius\\Belfius' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Belfius/Belfius.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Billink' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Billink.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Models\\Article' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Models/Article.php',
-        'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Models\\Capture' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Models/Capture.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Models\\Pay' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Models/Pay.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Models\\Recipient' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Models/Recipient.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Models\\Refund' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Models/Refund.php',
@@ -168,6 +167,8 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\GiftCard\\Models\\Pay' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/GiftCard/Models/Pay.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\GiftCard\\Models\\PayPayload' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/GiftCard/Models/PayPayload.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\GiftCard\\Models\\Refund' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/GiftCard/Models/Refund.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\GooglePay\\GooglePay' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/GooglePay/GooglePay.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\GooglePay\\Models\\Pay' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/GooglePay/Models/Pay.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\In3Old\\In3Old' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/In3Old/In3Old.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\In3Old\\Models\\Pay' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/In3Old/Models/Pay.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\In3Old\\Models\\PayPayload' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/In3Old/Models/PayPayload.php',
@@ -705,6 +706,7 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'Buckaroo\\Woocommerce\\Gateways\\Belfius\\BelfiusGateway' => __DIR__ . '/../..' . '/src/Gateways/Belfius/BelfiusGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Billink\\BillinkGateway' => __DIR__ . '/../..' . '/src/Gateways/Billink/BillinkGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Billink\\BillinkProcessor' => __DIR__ . '/../..' . '/src/Gateways/Billink/BillinkProcessor.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Bizum\\BizumGateway' => __DIR__ . '/../..' . '/src/Gateways/Bizum/BizumGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Blik\\BlikGateway' => __DIR__ . '/../..' . '/src/Gateways/Blik/BlikGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\BuckarooExpressBlocks' => __DIR__ . '/../..' . '/src/Gateways/BuckarooExpressBlocks.php',
         'Buckaroo\\Woocommerce\\Gateways\\CreditCard\\Cards\\AmexGateway' => __DIR__ . '/../..' . '/src/Gateways/CreditCard/Cards/AmexGateway.php',
@@ -763,6 +765,7 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'Buckaroo\\Woocommerce\\Gateways\\Przelewy24\\Przelewy24Processor' => __DIR__ . '/../..' . '/src/Gateways/Przelewy24/Przelewy24Processor.php',
         'Buckaroo\\Woocommerce\\Gateways\\SepaDirectDebit\\SepaDirectDebitGateway' => __DIR__ . '/../..' . '/src/Gateways/SepaDirectDebit/SepaDirectDebitGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\SepaDirectDebit\\SepaDirectDebitProcessor' => __DIR__ . '/../..' . '/src/Gateways/SepaDirectDebit/SepaDirectDebitProcessor.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Swish\\SwishGateway' => __DIR__ . '/../..' . '/src/Gateways/Swish/SwishGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Transfer\\TransferGateway' => __DIR__ . '/../..' . '/src/Gateways/Transfer/TransferGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Transfer\\TransferProcessor' => __DIR__ . '/../..' . '/src/Gateways/Transfer/TransferProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\Transfer\\TransferResponse' => __DIR__ . '/../..' . '/src/Gateways/Transfer/TransferResponse.php',
@@ -770,6 +773,9 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
         'Buckaroo\\Woocommerce\\Gateways\\Trustly\\TrustlyProcessor' => __DIR__ . '/../..' . '/src/Gateways/Trustly/TrustlyProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\Twint\\TwintGateway' => __DIR__ . '/../..' . '/src/Gateways/Twint/TwintGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\WeChatPay\\WeChatPayGateway' => __DIR__ . '/../..' . '/src/Gateways/WeChatPay/WeChatPayGateway.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Wero\\WeroGateway' => __DIR__ . '/../..' . '/src/Gateways/Wero/WeroGateway.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Wero\\WeroProcessor' => __DIR__ . '/../..' . '/src/Gateways/Wero/WeroProcessor.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Wero\\WeroRefundProcessor' => __DIR__ . '/../..' . '/src/Gateways/Wero/WeroRefundProcessor.php',
         'Buckaroo\\Woocommerce\\Hooks\\AdminHooks' => __DIR__ . '/../..' . '/src/Hooks/AdminHooks.php',
         'Buckaroo\\Woocommerce\\Hooks\\CronEvents' => __DIR__ . '/../..' . '/src/Hooks/CronEvents.php',
         'Buckaroo\\Woocommerce\\Hooks\\DisableGateways' => __DIR__ . '/../..' . '/src/Hooks/DisableGateways.php',
@@ -819,9 +825,9 @@ class ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8b4a193f2200c280867ebddc98b49c3c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitda27df368105ef6386c88b2163f28373::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitda27df368105ef6386c88b2163f28373::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitda27df368105ef6386c88b2163f28373::$classMap;
 
         }, null, ClassLoader::class);
     }

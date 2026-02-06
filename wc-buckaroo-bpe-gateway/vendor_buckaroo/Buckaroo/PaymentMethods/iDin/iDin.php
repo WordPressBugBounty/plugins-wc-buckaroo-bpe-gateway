@@ -21,7 +21,6 @@
 namespace BuckarooDeps\Buckaroo\PaymentMethods\iDin;
 
 use BuckarooDeps\Buckaroo\Models\Payload\DataRequestPayload;
-use BuckarooDeps\Buckaroo\Models\Payload\PayPayload;
 use BuckarooDeps\Buckaroo\PaymentMethods\iDin\Models\Issuer;
 use BuckarooDeps\Buckaroo\PaymentMethods\iDin\Service\ParameterKeys\IssuerAdapter;
 use BuckarooDeps\Buckaroo\PaymentMethods\PaymentMethod;

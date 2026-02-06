@@ -21,7 +21,6 @@
 namespace BuckarooDeps\Buckaroo\PaymentMethods\CreditManagement;
 
 use BuckarooDeps\Buckaroo\Models\Payload\DataRequestPayload;
-use BuckarooDeps\Buckaroo\Models\Payload\PayPayload;
 use BuckarooDeps\Buckaroo\PaymentMethods\CreditManagement\Models\AddOrUpdateProductLines;
 use BuckarooDeps\Buckaroo\PaymentMethods\CreditManagement\Models\CreditNote;
 use BuckarooDeps\Buckaroo\PaymentMethods\CreditManagement\Models\Debtor;
