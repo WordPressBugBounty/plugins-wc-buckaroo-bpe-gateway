@@ -63,6 +63,7 @@ class Response implements ArrayAccess, Arrayable
     }
 
     /** Implement ArrayAccess */
+    #[\BuckarooDeps_ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return isset($this->data[$offset]) ? $this->data[$offset] : null;

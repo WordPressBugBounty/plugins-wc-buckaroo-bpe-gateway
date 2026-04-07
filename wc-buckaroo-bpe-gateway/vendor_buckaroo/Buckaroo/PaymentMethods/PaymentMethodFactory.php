@@ -48,8 +48,8 @@ use BuckarooDeps\Buckaroo\PaymentMethods\iDin\iDin;
 use BuckarooDeps\Buckaroo\PaymentMethods\In3\In3;
 use BuckarooDeps\Buckaroo\PaymentMethods\In3Old\In3Old;
 use BuckarooDeps\Buckaroo\PaymentMethods\KBC\KBC;
+use BuckarooDeps\Buckaroo\PaymentMethods\Klarna\Klarna;
 use BuckarooDeps\Buckaroo\PaymentMethods\KlarnaKP\KlarnaKP;
-use BuckarooDeps\Buckaroo\PaymentMethods\KlarnaPay\KlarnaPay;
 use BuckarooDeps\Buckaroo\PaymentMethods\KnakenPay\KnakenPay;
 use BuckarooDeps\Buckaroo\PaymentMethods\Marketplaces\Marketplaces;
 use BuckarooDeps\Buckaroo\PaymentMethods\MBWay\MBWay;
@@ -105,7 +105,7 @@ class PaymentMethodFactory
         iDin::class => ['idin'],
         In3::class => ['in3'],
         In3Old::class => ['in3old'],
-        KlarnaPay::class => ['klarna', 'klarnain'],
+        Klarna::class => ['klarna'],
         KlarnaKP::class => ['klarnakp'],
         KnakenPay::class => ['knaken', 'knakenpay'],
         Multibanco::class => ['multibanco'],

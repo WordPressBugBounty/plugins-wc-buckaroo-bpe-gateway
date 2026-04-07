@@ -23,4 +23,6 @@ namespace BuckarooDeps\Buckaroo\PaymentMethods\In3\Models;
 class Company extends \BuckarooDeps\Buckaroo\Models\Person
 {
     protected string $customerNumber;
+    protected ?string $companyName;
+    protected ?string $chamberOfCommerce;
 }
