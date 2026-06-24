@@ -10,7 +10,7 @@
  */
 
 if (\PHP_VERSION_ID < 80000 && extension_loaded('tokenizer')) {
-    class BuckarooDeps_PhpToken extends Symfony\Polyfill\Php80\BuckarooDeps_PhpToken
+    class BuckarooDeps_BuckarooDeps_BuckarooDeps_PhpToken extends Symfony\Polyfill\Php80\BuckarooDeps_BuckarooDeps_BuckarooDeps_PhpToken
     {
     }
 }

@@ -15,7 +15,7 @@ declare(strict_types=1);
 namespace BuckarooDeps\Ramsey\Uuid\Type;
 
 use BuckarooDeps\Ramsey\Uuid\Exception\InvalidArgumentException;
-use BuckarooDeps_ValueError;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError;
 
 use function ctype_digit;
 use function ltrim;
@@ -144,7 +144,7 @@ final class Integer implements NumberInterface
     {
         // @codeCoverageIgnoreStart
         if (!isset($data['string'])) {
-            throw new BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
+            throw new BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
         }
         // @codeCoverageIgnoreEnd
 

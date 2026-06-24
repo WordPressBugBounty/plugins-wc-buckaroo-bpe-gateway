@@ -23,7 +23,7 @@ namespace BuckarooDeps\Buckaroo\Handlers\Logging;
 use BuckarooDeps\Buckaroo\Handlers\Logging\Observers\ErrorReporter;
 use BuckarooDeps\Buckaroo\Handlers\Logging\Observers\Monolog;
 use BuckarooDeps\Psr\Log\LoggerInterface;
-use BuckarooDeps_Stringable;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_Stringable;
 
 class DefaultLogger implements Subject, LoggerInterface
 {
@@ -81,7 +81,7 @@ class DefaultLogger implements Subject, LoggerInterface
     }
 
     /**
-     * @param string|BuckarooDeps_Stringable $message The log message
+     * @param string|BuckarooDeps_BuckarooDeps_BuckarooDeps_Stringable $message The log message
      * @param array $context
      * @return void
      */
@@ -91,7 +91,7 @@ class DefaultLogger implements Subject, LoggerInterface
     }
 
     /**
-     * @param string|BuckarooDeps_Stringable $message The log message
+     * @param string|BuckarooDeps_BuckarooDeps_BuckarooDeps_Stringable $message The log message
      * @param array $context
      * @return void
      */

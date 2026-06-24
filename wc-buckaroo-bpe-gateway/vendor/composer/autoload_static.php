@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitda27df368105ef6386c88b2163f28373
+class ComposerStaticInit32ab8f8fa28e6e1c559d2db17a86150f
 {
     public static $prefixLengthsPsr4 = array (
         'B' =>
@@ -116,6 +116,11 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\BankTransfer\\Service\\ParameterKeys\\CustomerAdapter' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/BankTransfer/Service/ParameterKeys/CustomerAdapter.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\BankTransfer\\Service\\ParameterKeys\\EmailAdapter' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/BankTransfer/Service/ParameterKeys/EmailAdapter.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\BankTransfer\\Service\\ParameterKeys\\PayAdapter' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/BankTransfer/Service/ParameterKeys/PayAdapter.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\Banking\\Banking' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Banking/Banking.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\Banking\\Models\\InstantPaymentOrder' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Banking/Models/InstantPaymentOrder.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\Banking\\Models\\PaymentOrder' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Banking/Models/PaymentOrder.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\Banking\\Models\\PaymentOrderPayload' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Banking/Models/PaymentOrderPayload.php',
+        'BuckarooDeps\\Buckaroo\\PaymentMethods\\Banking\\Service\\ParameterKeys\\PaymentOrderAdapter' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Banking/Service/ParameterKeys/PaymentOrderAdapter.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\BatchTransactions' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/BatchTransactions.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Belfius\\Belfius' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Belfius/Belfius.php',
         'BuckarooDeps\\Buckaroo\\PaymentMethods\\Billink\\Billink' => __DIR__ . '/../..' . '/vendor_buckaroo/Buckaroo/PaymentMethods/Billink/Billink.php',
@@ -344,10 +349,13 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'BuckarooDeps\\GuzzleHttp\\Handler\\CurlFactoryInterface' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/CurlFactoryInterface.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\CurlHandler' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/CurlHandler.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\CurlMultiHandler' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/CurlMultiHandler.php',
+        'BuckarooDeps\\GuzzleHttp\\Handler\\CurlShareHandleState' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/CurlShareHandleState.php',
+        'BuckarooDeps\\GuzzleHttp\\Handler\\CurlVersion' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/CurlVersion.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\EasyHandle' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/EasyHandle.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\HeaderProcessor' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/HeaderProcessor.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\MockHandler' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/MockHandler.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\Proxy' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/Proxy.php',
+        'BuckarooDeps\\GuzzleHttp\\Handler\\ProxyEnvironment' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/ProxyEnvironment.php',
         'BuckarooDeps\\GuzzleHttp\\Handler\\StreamHandler' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Handler/StreamHandler.php',
         'BuckarooDeps\\GuzzleHttp\\MessageFormatter' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/MessageFormatter.php',
         'BuckarooDeps\\GuzzleHttp\\MessageFormatterInterface' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/MessageFormatterInterface.php',
@@ -390,6 +398,7 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'BuckarooDeps\\GuzzleHttp\\Psr7\\Query' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/Query.php',
         'BuckarooDeps\\GuzzleHttp\\Psr7\\Request' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/Request.php',
         'BuckarooDeps\\GuzzleHttp\\Psr7\\Response' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/Response.php',
+        'BuckarooDeps\\GuzzleHttp\\Psr7\\Rfc3986' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/Rfc3986.php',
         'BuckarooDeps\\GuzzleHttp\\Psr7\\Rfc7230' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/Rfc7230.php',
         'BuckarooDeps\\GuzzleHttp\\Psr7\\ServerRequest' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/ServerRequest.php',
         'BuckarooDeps\\GuzzleHttp\\Psr7\\Stream' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Psr7/Stream.php',
@@ -405,6 +414,7 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'BuckarooDeps\\GuzzleHttp\\RequestOptions' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/RequestOptions.php',
         'BuckarooDeps\\GuzzleHttp\\RetryMiddleware' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/RetryMiddleware.php',
         'BuckarooDeps\\GuzzleHttp\\TransferStats' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/TransferStats.php',
+        'BuckarooDeps\\GuzzleHttp\\TransportSharing' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/TransportSharing.php',
         'BuckarooDeps\\GuzzleHttp\\Utils' => __DIR__ . '/../..' . '/vendor_buckaroo/GuzzleHttp/Utils.php',
         'BuckarooDeps\\Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/../..' . '/vendor_buckaroo/Monolog/Attribute/AsMonologProcessor.php',
         'BuckarooDeps\\Monolog\\DateTimeImmutable' => __DIR__ . '/../..' . '/vendor_buckaroo/Monolog/DateTimeImmutable.php',
@@ -734,6 +744,10 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'Buckaroo\\Woocommerce\\Gateways\\ExpressPaymentManager' => __DIR__ . '/../..' . '/src/Gateways/ExpressPaymentManager.php',
         'Buckaroo\\Woocommerce\\Gateways\\GiftCard\\GiftCardGateway' => __DIR__ . '/../..' . '/src/Gateways/GiftCard/GiftCardGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\GiftCard\\GiftCardProcessor' => __DIR__ . '/../..' . '/src/Gateways/GiftCard/GiftCardProcessor.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Googlepay\\GooglepayButtons' => __DIR__ . '/../..' . '/src/Gateways/Googlepay/GooglepayButtons.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Googlepay\\GooglepayController' => __DIR__ . '/../..' . '/src/Gateways/Googlepay/GooglepayController.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Googlepay\\GooglepayGateway' => __DIR__ . '/../..' . '/src/Gateways/Googlepay/GooglepayGateway.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Googlepay\\GooglepayProcessor' => __DIR__ . '/../..' . '/src/Gateways/Googlepay/GooglepayProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\Ideal\\IdealGateway' => __DIR__ . '/../..' . '/src/Gateways/Ideal/IdealGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Ideal\\IdealProcessor' => __DIR__ . '/../..' . '/src/Gateways/Ideal/IdealProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\Idin\\IdinController' => __DIR__ . '/../..' . '/src/Gateways/Idin/IdinController.php',
@@ -741,14 +755,13 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'Buckaroo\\Woocommerce\\Gateways\\Idin\\IdinProcessor' => __DIR__ . '/../..' . '/src/Gateways/Idin/IdinProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\In3\\In3Gateway' => __DIR__ . '/../..' . '/src/Gateways/In3/In3Gateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\In3\\In3Processor' => __DIR__ . '/../..' . '/src/Gateways/In3/In3Processor.php',
-        'Buckaroo\\Woocommerce\\Gateways\\In3\\In3V2Processor' => __DIR__ . '/../..' . '/src/Gateways/In3/In3V2Processor.php',
         'Buckaroo\\Woocommerce\\Gateways\\Kbc\\KbcGateway' => __DIR__ . '/../..' . '/src/Gateways/Kbc/KbcGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaCancelReservation' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaCancelReservation.php',
+        'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaFulfillmentActions' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaFulfillmentActions.php',
         'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaGateway' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaKpGateway' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaKpGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaKpProcessor' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaKpProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaPayGateway' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaPayGateway.php',
-        'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaPiiGateway' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaPiiGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\Klarna\\KlarnaProcessor' => __DIR__ . '/../..' . '/src/Gateways/Klarna/KlarnaProcessor.php',
         'Buckaroo\\Woocommerce\\Gateways\\KnakenSettle\\KnakenSettleGateway' => __DIR__ . '/../..' . '/src/Gateways/KnakenSettle/KnakenSettleGateway.php',
         'Buckaroo\\Woocommerce\\Gateways\\MbWay\\MbWayGateway' => __DIR__ . '/../..' . '/src/Gateways/MbWay/MbWayGateway.php',
@@ -796,6 +809,8 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'Buckaroo\\Woocommerce\\Install\\Migration\\MigrationException' => __DIR__ . '/../..' . '/src/Install/Migration/MigrationException.php',
         'Buckaroo\\Woocommerce\\Install\\Migration\\MigrationHandler' => __DIR__ . '/../..' . '/src/Install/Migration/MigrationHandler.php',
         'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\DisableAutoloadForSettings' => __DIR__ . '/../..' . '/src/Install/Migration/Versions/DisableAutoloadForSettings.php',
+        'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\MigrateIdealToIdealWero' => __DIR__ . '/../..' . '/src/Install/Migration/Versions/MigrateIdealToIdealWero.php',
+        'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\MigrateKlarnaPayLaterLabels' => __DIR__ . '/../..' . '/src/Install/Migration/Versions/MigrateKlarnaPayLaterLabels.php',
         'Buckaroo\\Woocommerce\\Install\\Migration\\Versions\\SetupTransactionsAndLogs' => __DIR__ . '/../..' . '/src/Install/Migration/Versions/SetupTransactionsAndLogs.php',
         'Buckaroo\\Woocommerce\\Order\\AddressComponents' => __DIR__ . '/../..' . '/src/Order/AddressComponents.php',
         'Buckaroo\\Woocommerce\\Order\\CaptureTransaction' => __DIR__ . '/../..' . '/src/Order/CaptureTransaction.php',
@@ -807,6 +822,7 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
         'Buckaroo\\Woocommerce\\Order\\OrderItem' => __DIR__ . '/../..' . '/src/Order/OrderItem.php',
         'Buckaroo\\Woocommerce\\PaymentProcessors\\Actions\\CancelReservationAction' => __DIR__ . '/../..' . '/src/PaymentProcessors/Actions/CancelReservationAction.php',
         'Buckaroo\\Woocommerce\\PaymentProcessors\\Actions\\CaptureAction' => __DIR__ . '/../..' . '/src/PaymentProcessors/Actions/CaptureAction.php',
+        'Buckaroo\\Woocommerce\\PaymentProcessors\\Actions\\ExtendReservationAction' => __DIR__ . '/../..' . '/src/PaymentProcessors/Actions/ExtendReservationAction.php',
         'Buckaroo\\Woocommerce\\PaymentProcessors\\Actions\\PayAction' => __DIR__ . '/../..' . '/src/PaymentProcessors/Actions/PayAction.php',
         'Buckaroo\\Woocommerce\\PaymentProcessors\\Actions\\RefundAction' => __DIR__ . '/../..' . '/src/PaymentProcessors/Actions/RefundAction.php',
         'Buckaroo\\Woocommerce\\PaymentProcessors\\PushProcessor' => __DIR__ . '/../..' . '/src/PaymentProcessors/PushProcessor.php',
@@ -830,9 +846,9 @@ class ComposerStaticInitda27df368105ef6386c88b2163f28373
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitda27df368105ef6386c88b2163f28373::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitda27df368105ef6386c88b2163f28373::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitda27df368105ef6386c88b2163f28373::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit32ab8f8fa28e6e1c559d2db17a86150f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit32ab8f8fa28e6e1c559d2db17a86150f::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit32ab8f8fa28e6e1c559d2db17a86150f::$classMap;
 
         }, null, ClassLoader::class);
     }

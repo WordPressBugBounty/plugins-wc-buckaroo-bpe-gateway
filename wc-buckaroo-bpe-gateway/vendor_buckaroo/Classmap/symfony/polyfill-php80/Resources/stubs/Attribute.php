@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-#[BuckarooDeps_Attribute(Attribute::TARGET_CLASS)]
-final class BuckarooDeps_Attribute
+#[BuckarooDeps_BuckarooDeps_BuckarooDeps_Attribute(Attribute::TARGET_CLASS)]
+final class BuckarooDeps_BuckarooDeps_BuckarooDeps_Attribute
 {
     public const TARGET_CLASS = 1;
     public const TARGET_FUNCTION = 2;

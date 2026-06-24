@@ -10,7 +10,7 @@
  */
 
 if (\PHP_VERSION_ID < 80000) {
-    class BuckarooDeps_ValueError extends Error
+    class BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError extends Error
     {
     }
 }

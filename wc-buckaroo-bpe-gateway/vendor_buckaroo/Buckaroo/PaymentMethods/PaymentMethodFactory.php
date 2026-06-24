@@ -26,6 +26,7 @@ use BuckarooDeps\Buckaroo\PaymentMethods\AfterpayDigiAccept\AfterpayDigiAccept;
 use BuckarooDeps\Buckaroo\PaymentMethods\Alipay\Alipay;
 use BuckarooDeps\Buckaroo\PaymentMethods\ApplePay\ApplePay;
 use BuckarooDeps\Buckaroo\PaymentMethods\Bancontact\Bancontact;
+use BuckarooDeps\Buckaroo\PaymentMethods\Banking\Banking;
 use BuckarooDeps\Buckaroo\PaymentMethods\BankTransfer\BankTransfer;
 use BuckarooDeps\Buckaroo\PaymentMethods\Belfius\Belfius;
 use BuckarooDeps\Buckaroo\PaymentMethods\Billink\Billink;
@@ -84,6 +85,7 @@ class PaymentMethodFactory
         Afterpay::class => ['afterpay'],
         AfterpayDigiAccept::class => ['afterpaydigiaccept'],
         Bancontact::class => ['bancontact', 'bancontactmrcash'],
+        Banking::class => ['banking'],
         Bizum::class => ['bizum'],
         Billink::class => ['billink'],
         Blik::class => ['blik'],

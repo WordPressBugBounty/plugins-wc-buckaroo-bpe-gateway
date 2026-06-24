@@ -16,7 +16,7 @@ namespace BuckarooDeps\Ramsey\Uuid\Type;
 
 use BuckarooDeps\Ramsey\Uuid\Exception\UnsupportedOperationException;
 use BuckarooDeps\Ramsey\Uuid\Type\Integer as IntegerObject;
-use BuckarooDeps_ValueError;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError;
 use stdClass;
 
 use function json_decode;
@@ -130,7 +130,7 @@ final class Time implements TypeInterface
     {
         // @codeCoverageIgnoreStart
         if (!isset($data['seconds']) || !isset($data['microseconds'])) {
-            throw new BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
+            throw new BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
         }
         // @codeCoverageIgnoreEnd
 

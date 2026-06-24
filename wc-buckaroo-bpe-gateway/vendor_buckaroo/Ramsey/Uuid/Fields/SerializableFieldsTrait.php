@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace BuckarooDeps\Ramsey\Uuid\Fields;
 
-use BuckarooDeps_ValueError;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError;
 
 use function base64_decode;
 use function sprintf;
@@ -77,7 +77,7 @@ trait SerializableFieldsTrait
     {
         // @codeCoverageIgnoreStart
         if (!isset($data['bytes'])) {
-            throw new BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
+            throw new BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
         }
         // @codeCoverageIgnoreEnd
 

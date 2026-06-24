@@ -10,7 +10,7 @@
  */
 
 if (\PHP_VERSION_ID < 80000) {
-    interface BuckarooDeps_Stringable
+    interface BuckarooDeps_BuckarooDeps_BuckarooDeps_Stringable
     {
         /**
          * @return string

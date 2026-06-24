@@ -16,7 +16,7 @@ namespace BuckarooDeps\Ramsey\Uuid\Generator;
 
 use BuckarooDeps\Ramsey\Uuid\Exception\NameException;
 use BuckarooDeps\Ramsey\Uuid\UuidInterface;
-use BuckarooDeps_ValueError;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError;
 
 use function hash;
 
@@ -32,7 +32,7 @@ class DefaultNameGenerator implements NameGeneratorInterface
         try {
             /** @var string|bool $bytes */
             $bytes = @hash($hashAlgorithm, $ns->getBytes() . $name, true);
-        } catch (BuckarooDeps_ValueError $e) {
+        } catch (BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError $e) {
             $bytes = false; // keep same behavior than PHP 7
         }
 

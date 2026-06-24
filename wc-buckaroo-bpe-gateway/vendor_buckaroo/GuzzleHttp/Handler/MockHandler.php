@@ -7,7 +7,6 @@ use BuckarooDeps\GuzzleHttp\HandlerStack;
 use BuckarooDeps\GuzzleHttp\Promise as P;
 use BuckarooDeps\GuzzleHttp\Promise\PromiseInterface;
 use BuckarooDeps\GuzzleHttp\TransferStats;
-use BuckarooDeps\GuzzleHttp\Utils;
 use BuckarooDeps\Psr\Http\Message\RequestInterface;
 use BuckarooDeps\Psr\Http\Message\ResponseInterface;
 use BuckarooDeps\Psr\Http\Message\StreamInterface;
@@ -160,7 +159,7 @@ class MockHandler implements \Countable
             ) {
                 $this->queue[] = $value;
             } else {
-                throw new \TypeError('Expected a Response, Promise, Throwable or callable. Found '.Utils::describeType($value));
+                throw new \TypeError('Expected a Response, Promise, Throwable or callable. Found '.\get_debug_type($value));
             }
         }
     }

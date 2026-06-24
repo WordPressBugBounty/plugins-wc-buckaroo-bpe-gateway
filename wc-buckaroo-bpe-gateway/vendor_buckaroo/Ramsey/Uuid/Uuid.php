@@ -23,7 +23,7 @@ use BuckarooDeps\Ramsey\Uuid\Lazy\LazyUuidFromString;
 use BuckarooDeps\Ramsey\Uuid\Rfc4122\FieldsInterface as Rfc4122FieldsInterface;
 use BuckarooDeps\Ramsey\Uuid\Type\Hexadecimal;
 use BuckarooDeps\Ramsey\Uuid\Type\Integer as IntegerObject;
-use BuckarooDeps_ValueError;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError;
 
 use function assert;
 use function bin2hex;
@@ -330,7 +330,7 @@ class Uuid implements UuidInterface
     {
         // @codeCoverageIgnoreStart
         if (!isset($data['bytes'])) {
-            throw new BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
+            throw new BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
         }
         // @codeCoverageIgnoreEnd
 

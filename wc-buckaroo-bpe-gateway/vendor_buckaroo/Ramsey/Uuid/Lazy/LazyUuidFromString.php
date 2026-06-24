@@ -24,7 +24,7 @@ use BuckarooDeps\Ramsey\Uuid\Type\Hexadecimal;
 use BuckarooDeps\Ramsey\Uuid\Type\Integer as IntegerObject;
 use BuckarooDeps\Ramsey\Uuid\UuidFactory;
 use BuckarooDeps\Ramsey\Uuid\UuidInterface;
-use BuckarooDeps_ValueError;
+use BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError;
 
 use function assert;
 use function bin2hex;
@@ -123,7 +123,7 @@ final class LazyUuidFromString implements UuidInterface
     {
         // @codeCoverageIgnoreStart
         if (!isset($data['string'])) {
-            throw new BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
+            throw new BuckarooDeps_BuckarooDeps_BuckarooDeps_ValueError(sprintf('%s(): Argument #1 ($data) is invalid', __METHOD__));
         }
         // @codeCoverageIgnoreEnd
 

@@ -10,7 +10,7 @@
  */
 
 if (\PHP_VERSION_ID < 80100) {
-    #[BuckarooDeps_Attribute(Attribute::TARGET_METHOD)]
+    #[BuckarooDeps_BuckarooDeps_BuckarooDeps_Attribute(Attribute::TARGET_METHOD)]
     final class BuckarooDeps_ReturnTypeWillChange
     {
         public function __construct()
