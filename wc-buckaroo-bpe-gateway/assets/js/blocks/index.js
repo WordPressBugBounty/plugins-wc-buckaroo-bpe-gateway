@@ -15,24 +15,18 @@ function BuckarooComponent({ wc, billing, gateway, eventRegistration, emitRespon
     const methodName = convertUnderScoreToDash(gateway.paymentMethodId);
 
     useEffect(() => {
-        // Only methods that actually carry a payment fee need the server-side
-        // recalculation. Skipping it for fee-less methods avoids a full
-        // WordPress bootstrap on every payment method switch.
         if (!gateway.hasFee) {
             return;
         }
 
         const request = jQuery.ajax({
-            url: '/wp-admin/admin-ajax.php',
+            url: buckaroo_global.admin_ajax_url,
             type: 'POST',
             data: {
                 action: 'woocommerce_cart_calculate_fees',
                 method: gateway.paymentMethodId,
             },
         });
-
-        // Abort the in-flight request when the selection changes again so
-        // rapid switching does not pile up redundant requests.
         return () => request.abort();
     }, [gateway.paymentMethodId, gateway.hasFee]);
 
@@ -147,6 +141,12 @@ const registerBuckarooPaymentMethods = () => {
     const buckarooGateways = getEnabledBuckarooPaymentMethods();
     const { registerPaymentMethod } = window.wc.wcBlocksRegistry;
     buckarooGateways.forEach(gateway => {
+        // Apple Pay is registered as a standard, selectable payment method only
+        // when the merchant enabled it as a checkout method (Part 2). Its Express
+        // Checkout button is registered separately below.
+        if (gateway.paymentMethodId === 'buckaroo_applepay' && !gateway.showAsPaymentMethod) {
+            return;
+        }
         registerPaymentMethod(createOptions(window.wc, gateway));
     });
 };
@@ -206,12 +206,30 @@ const registerApplePay = async applepay => {
     }
 
     const checkApplePaySupport = merchantIdentifier => {
-        if (!('ApplePaySession' in window)) return Promise.resolve(false);
-        if (ApplePaySession === undefined) return Promise.resolve(false);
-        return ApplePaySession.canMakePaymentsWithActiveCard(merchantIdentifier);
+        // Guard against insecure contexts and any thrown/rejected error: Apple Pay
+        // APIs throw InvalidAccessError on a non-secure document, and an unhandled
+        // rejection here aborts Blocks payment rendering. Degrade to "not supported".
+        try {
+            if (!('ApplePaySession' in window) || typeof ApplePaySession === 'undefined') {
+                return Promise.resolve(false);
+            }
+            if (window.isSecureContext === false) {
+                return Promise.resolve(false);
+            }
+            return Promise.resolve(ApplePaySession.canMakePaymentsWithActiveCard(merchantIdentifier)).catch(
+                () => false
+            );
+        } catch (e) {
+            return Promise.resolve(false);
+        }
     };
 
-    const canDisplay = await checkApplePaySupport(applepay.merchantIdentifier);
+    let canDisplay = false;
+    try {
+        canDisplay = await checkApplePaySupport(applepay.merchantIdentifier);
+    } catch (e) {
+        canDisplay = false;
+    }
     if (applepay.showInCheckout && canDisplay) {
         const { registerExpressPaymentMethod } = wc.wcBlocksRegistry;
 
@@ -230,7 +248,9 @@ const createOptions = (wc, gateway) => ({
     label: <BuckarooLabel imagePath={gateway.image_path} title={decodeHtmlEntities(gateway.title)} />,
     paymentMethodId: gateway.paymentMethodId,
     edit: <div />,
-    canMakePayment: () => true,
+    canMakePayment: () =>
+        (typeof window !== 'undefined' && window.location && window.location.pathname.indexOf('/wp-admin/') !== -1) ||
+        gateway.available !== false,
     ariaLabel: gateway.title,
     content: <BuckarooComponent gateway={gateway} wc={wc} />,
 });
