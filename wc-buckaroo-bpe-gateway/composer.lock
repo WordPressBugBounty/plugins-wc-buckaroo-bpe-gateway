@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32ab8f8fa28e6e1c559d2db17a86150f",
+    "content-hash": "1dc6f7f7dc3b6af89f173351b9bef42d",
     "packages": [
         {
             "name": "brick/math",
@@ -68,16 +68,16 @@
         },
         {
             "name": "buckaroo/sdk",
-            "version": "1.24.4",
+            "version": "1.24.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buckaroo-it/BuckarooSDK_PHP.git",
-                "reference": "cd040e45c9bfd84b37bb42a750fa3078fdb139f1"
+                "reference": "2c8bd1f76d470723f8ae6d69a317b12848562f18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buckaroo-it/BuckarooSDK_PHP/zipball/cd040e45c9bfd84b37bb42a750fa3078fdb139f1",
-                "reference": "cd040e45c9bfd84b37bb42a750fa3078fdb139f1",
+                "url": "https://api.github.com/repos/buckaroo-it/BuckarooSDK_PHP/zipball/2c8bd1f76d470723f8ae6d69a317b12848562f18",
+                "reference": "2c8bd1f76d470723f8ae6d69a317b12848562f18",
                 "shasum": ""
             },
             "require": {
@@ -119,9 +119,9 @@
             "description": "Buckaroo payment SDK",
             "support": {
                 "issues": "https://github.com/buckaroo-it/BuckarooSDK_PHP/issues",
-                "source": "https://github.com/buckaroo-it/BuckarooSDK_PHP/tree/1.24.4"
+                "source": "https://github.com/buckaroo-it/BuckarooSDK_PHP/tree/1.24.5"
             },
-            "time": "2026-09-11T07:45:21+00:00"
+            "time": "2026-09-22T09:06:21+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2220,16 +2220,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.36",
+            "version": "9.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "abab27ed286d3e1246fbbfe6b56bfd732d945ec9"
+                "reference": "aceaa623912caf8e80bffea22fc4103a0a01565f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/abab27ed286d3e1246fbbfe6b56bfd732d945ec9",
-                "reference": "abab27ed286d3e1246fbbfe6b56bfd732d945ec9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/aceaa623912caf8e80bffea22fc4103a0a01565f",
+                "reference": "aceaa623912caf8e80bffea22fc4103a0a01565f",
                 "shasum": ""
             },
             "require": {
@@ -2303,7 +2303,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.36"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.37"
             },
             "funding": [
                 {
@@ -2311,7 +2311,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-08-11T06:25:15+00:00"
+            "time": "2026-09-23T09:59:59+00:00"
         },
         {
             "name": "psr/container",
